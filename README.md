@@ -38,16 +38,24 @@ This project captures live video from a webcam, detects hands using **MediaPipe 
 ---
 
 ## 🗂️ Project Structure
-
+```
 SignLanguage_Translation/
 │
-├── app.py                # Real-time ASL translation script  
-├── asl_translation.ipynb # Model training notebook  
-├── model.h5              # Trained model weights  
-├── asl_labels.json       # Label mappings  
-├── requirements.txt      # Dependencies  
-└── README.md             # Documentation  
-
+├── app.py                      # Main real-time ASL translation application
+├── asl_labels.json             # Label index to ASL class mapping
+├── model.h5                    # Trained deep learning model (HDF5 format)
+├── model.keras                 # Trained model (Keras native format)
+├── requirements.txt            # Python dependencies
+├── ASL_symbols.png             # ASL alphabet reference image
+├── captured_frame.jpg          # Sample captured webcam frame
+├── captured_hand.jpg           # Sample cropped hand image
+├── README.md                   # Project documentation
+├── LICENSE                     # MIT License
+├── .gitignore                  # Git ignore rules
+└── research/                   # Model training and experimentation
+    ├── asl-translation.ipynb   # Training, preprocessing, and evaluation notebook
+    └── prediction.ipynb        # Model inference and prediction testing
+```
 ---
 
 ## 🚀 How It Works
