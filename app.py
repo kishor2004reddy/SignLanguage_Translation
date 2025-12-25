@@ -94,7 +94,9 @@ while cap.isOpened():
                         sentence.append(most_common)
                         last_word = most_common
 
-            mp_draw.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
+            # mp_draw.draw_landmarks(frame, hand_landmarks, mp_hands.HAND_CONNECTIONS)
+            # Draw bounding box
+            cv2.rectangle(frame, (xmin, ymin), (xmax, ymax), (0, 255, 0), 2)
 
     # Display sentence
     cv2.putText(frame, " ".join(sentence), (10, 50),
