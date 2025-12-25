@@ -110,14 +110,6 @@ Press **Q** to quit the application.
 
 ---
 
-## 📈 Performance
-
-- Mixed precision training  
-- GPU-accelerated training (Tesla P100)  
-- Real-time inference on CPU systems  
-
----
-
 ## 🔮 Future Enhancements
 
 - Word and sentence-level ASL translation  
